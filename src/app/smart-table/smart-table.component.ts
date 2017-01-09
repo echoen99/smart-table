@@ -9,6 +9,12 @@ import { TableData } from './table-data';
 })
 export class SmartTableComponent implements OnInit {
 settings = {
+  actions: {
+    add:false,
+    edit:false,
+    delete:false
+  },
+  //hideHeader:true,
   columns: {
     id: {
       title: 'ID'
@@ -23,6 +29,7 @@ settings = {
       title: 'Email'
     }
   }
+ //[actions.add:false
 };
 
   constructor(private tds:TableDataService) { }
